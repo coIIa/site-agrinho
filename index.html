@@ -3,69 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte e Sustentável</title>
+    <title>Agro Forte - Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h1>🌱 Agro Forte</h1>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero">
-            <h2>Produzindo hoje, preservando o amanhã</h2>
-            <p>O agronegócio sustentável une tecnologia, produtividade e respeito ao meio ambiente.</p>
-            <button id="saibaMais">Saiba Mais</button>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            🌱 Agro Forte
         </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+
+            <div class="menu-btn">
+                ☰
+            </div>
+        </nav>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre o Agro Sustentável</h2>
-        <p>
-            O agro sustentável busca aumentar a produção agrícola sem comprometer os recursos naturais,
-            promovendo práticas responsáveis para garantir alimento, renda e preservação ambiental.
-        </p>
+    <!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Agro Forte,
+                <span>Futuro Sustentável</span>
+            </h1>
+
+            <p>
+                Aprenda formas simples e econômicas de tornar sua fazenda mais sustentável.
+            </p>
+
+            <button id="saibaMais">
+                Ver Dicas
+            </button>
+
+        </div>
+
     </section>
 
-    <section id="beneficios">
-        <h2>Benefícios</h2>
+    <!-- ================= DICAS ================= -->
+    <section id="dicas" class="dicas">
+
+        <h2>Soluções Sustentáveis de Baixo Custo</h2>
 
         <div class="cards">
+
             <div class="card">
-                <h3>🌿 Preservação Ambiental</h3>
-                <p>Uso consciente do solo, da água e dos recursos naturais.</p>
+                <h3>💧 Reutilização da Água</h3>
+                <p>
+                    Colete água da chuva para irrigação e limpeza de equipamentos.
+                </p>
             </div>
 
             <div class="card">
-                <h3>🚜 Tecnologia no Campo</h3>
-                <p>Inovação para aumentar a eficiência e reduzir desperdícios.</p>
+                <h3>🌿 Adubo Orgânico</h3>
+                <p>
+                    Aproveite restos vegetais e esterco para produzir compostagem.
+                </p>
             </div>
 
             <div class="card">
-                <h3>🌎 Futuro Sustentável</h3>
-                <p>Produção responsável para as próximas gerações.</p>
+                <h3>🌱 Rotação de Culturas</h3>
+                <p>
+                    Ajuda a preservar nutrientes do solo e reduz pragas.
+                </p>
             </div>
+
+            <div class="card">
+                <h3>☀️ Energia Solar</h3>
+                <p>
+                    Pequenos sistemas solares ajudam a diminuir gastos com energia.
+                </p>
+            </div>
+
         </div>
+
     </section>
 
-    <section class="contador">
-        <h2>Impacto Positivo</h2>
-        <div class="numero" id="contador">0</div>
-        <p>Árvores preservadas simbolicamente</p>
+    <!-- ================= BENEFÍCIOS ================= -->
+    <section class="beneficios">
+
+        <h2>Benefícios</h2>
+
+        <div class="beneficios-grid">
+
+            <div class="beneficio">
+                💰 Menor custo de produção
+            </div>
+
+            <div class="beneficio">
+                🌎 Menor impacto ambiental
+            </div>
+
+            <div class="beneficio">
+                🚜 Melhor aproveitamento dos recursos
+            </div>
+
+            <div class="beneficio">
+                📈 Maior produtividade no longo prazo
+            </div>
+
+        </div>
+
     </section>
 
-    <footer id="contato">
-        <h3>Agro Forte e Sustentável</h3>
-        <p>Email: contato@agroforte.com.br</p>
-        <p>© 2025 Todos os direitos reservados.</p>
+    <!-- ================= QUIZ ================= -->
+    <section id="quiz" class="quiz">
+
+        <h2>Teste seus conhecimentos</h2>
+
+        <div class="quiz-box">
+
+            <p>
+                Qual dessas práticas ajuda a economizar água na propriedade?
+            </p>
+
+            <button class="resposta" data-correta="true">
+                Captação de água da chuva
+            </button>
+
+            <button class="resposta">
+                Queimar resíduos agrícolas
+            </button>
+
+            <button class="resposta">
+                Descartar água utilizada
+            </button>
+
+            <div id="resultado"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            © 2026 Agro Forte - Futuro Sustentável
+        </p>
+
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>

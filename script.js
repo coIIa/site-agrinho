@@ -1,21 +1,57 @@
-// Botão Saiba Mais
-document.getElementById("saibaMais").addEventListener("click", () => {
-    document.getElementById("sobre").scrollIntoView({
-        behavior: "smooth"
-    });
+// ============================
+// MENU RESPONSIVO
+// ============================
+
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });
 
-// Contador animado
-let contador = document.getElementById("contador");
-let valor = 0;
-let objetivo = 5000;
+// ============================
+// BOTÃO HERO
+// ============================
 
-let intervalo = setInterval(() => {
-    valor += 50;
-    contador.textContent = valor;
+const btnSaibaMais = document.getElementById("saibaMais");
 
-    if (valor >= objetivo) {
-        contador.textContent = objetivo;
-        clearInterval(intervalo);
-    }
-}, 20);
+btnSaibaMais.addEventListener("click", () => {
+
+    document
+        .getElementById("dicas")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+});
+
+// ============================
+// QUIZ
+// ============================
+
+const respostas = document.querySelectorAll(".resposta");
+const resultado = document.getElementById("resultado");
+
+respostas.forEach(botao => {
+
+    botao.addEventListener("click", () => {
+
+        if(botao.dataset.correta){
+
+            resultado.textContent =
+            "✅ Correto! A captação da água da chuva ajuda a economizar recursos.";
+
+            resultado.style.color = "green";
+
+        } else {
+
+            resultado.textContent =
+            "❌ Resposta incorreta. Tente novamente.";
+
+            resultado.style.color = "red";
+
+        }
+
+    });
+
+});
